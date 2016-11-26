@@ -74,6 +74,13 @@
 #X obj 319 509 dac~ 1 2;
 #X obj 64 31 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
+#X msg 516 149 6 2 0;
+#X msg 516 209 2 5 1;
+#X obj 516 179 s pitchlist;
+#X obj 516 239 s durlist;
+#X obj 516 59 loadbang;
+#X obj 501 61 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
 #X connect 0 0 1 0;
 #X connect 2 0 3 0;
 #X connect 4 0 5 0;
@@ -145,3 +152,7 @@
 #X connect 64 0 27 0;
 #X connect 66 0 67 0;
 #X connect 69 0 27 0;
+#X connect 70 0 72 0;
+#X connect 71 0 73 0;
+#X connect 74 0 66 0;
+#X connect 75 0 74 0;
