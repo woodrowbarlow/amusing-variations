@@ -1,7 +1,7 @@
 #N canvas 465 114 731 504 10;
 #X obj 61 206 random;
 #X obj 61 236 + 1;
-#X floatatom 61 297 5 0 0 0 - - -;
+#X floatatom 61 327 5 0 0 0 - - -;
 #X floatatom 94 147 5 0 0 0 - - -;
 #X floatatom 224 146 5 0 0 0 - - -;
 #X obj 224 175 moses 1;
@@ -31,7 +31,7 @@
 #X obj 61 266 max;
 #X obj 104 115 s ml_current;
 #X obj 16 146 r ml_again;
-#X obj 61 326 s ml_durval;
+#X obj 61 356 s ml_durval;
 #X obj 31 416 r ml_durations;
 #X obj 134 416 r ml_pitches;
 #X obj 251 325 s ml_done;
@@ -52,6 +52,7 @@
 #X obj 484 55 r ml_durval;
 #X obj 505 145 r ml_done;
 #X obj 484 205 s ml_pitchlist;
+#X obj 61 296 min 8;
 #X connect 0 0 1 0;
 #X connect 1 0 28 0;
 #X connect 2 0 31 0;
@@ -88,7 +89,7 @@
 #X connect 26 0 3 0;
 #X connect 26 0 29 0;
 #X connect 27 0 38 0;
-#X connect 28 0 2 0;
+#X connect 28 0 52 0;
 #X connect 30 0 8 0;
 #X connect 32 0 12 0;
 #X connect 33 0 13 0;
@@ -102,3 +103,4 @@
 #X connect 48 0 19 1;
 #X connect 49 0 17 0;
 #X connect 50 0 15 1;
+#X connect 52 0 2 0;
